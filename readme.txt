@@ -6,7 +6,7 @@
 
 [B]Requirements:[/B] @cba_a3
 
-[B]Version:[/B] v3.4.2
+[B]Version:[/B] v3.4.3
 [B]Signed:[/B] Yes
 
 [B]Short description:[/B] An advanced and realistic name tag system designed to simulate real world recognition conditions. 
@@ -41,7 +41,9 @@ This has been separated out of the ZAM mods collection and is where you should g
 [/LIST]
 
 [B]Installation:[/B] 
-Standard mod installation with @folder.
+Standard mod installation with @folder. You will also have to copy the userconfig folder from the mod folder to your root Arma 3 directory (eg: C:\Program Files (x86)\Steam\steamapps\common\Arma 3\userconfig). 
+Otherwise you will get an error stating somehting along the lines of: z"am_shownames.hpp not found".
+I intend on deprecating this requirement in the futurem once a better mod configuration method comes along.
 
 [B]Included Files:[/B] 
 zam_shownames.pbo
@@ -91,6 +93,9 @@ Multiplayer and single player support
 
 [B]ChangeLog:[/B]
 [SPOILER]
+        V3.4.3 - 1-12-2015:
+                - Minor cosmentic cleanup of code. 
+
         V3.4.2 - 26-04-2015:
                 - Fixed TFAR support by changing currentUnit to TFAR_currentUnit in fn_showNames_tfar_eh.sqf
 
