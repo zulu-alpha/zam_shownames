@@ -2,7 +2,7 @@
 
 [B]Author:[/B] Phoenix of Zulu-Alpha
 [B]Author Website:[/B] [url]http://zulu-alpha.co.za/[/url]
-[B]Repo:[/B] [url]https://bitbucket.org/zulualpha/zam-shownames/[/url]
+[B]Repo:[/B] [url]https://github.com/zulu-alpha/zam_shownames[/url]
 
 [B]Requirements:[/B] @cba_a3
 
@@ -89,7 +89,8 @@ Multiplayer and single player support
 		 Feel free to use and modify this code, on the proviso that you post back changes and improvements 
 		 so that everyone can benefit from them, and acknowledge the original authors in any derivative works. 
 
-[B]Download:[/B] [url]https://bitbucket.org/zulualpha/zam-shownames/downloads/@zam_shownames_v3_4_1.zip[/url]
+[B]Download:[/B] [url]https://github.com/zulu-alpha/zam_shownames/releases/download/v3.4.3/@zam_shownames_v3_4_3.zip[/url]
+
 
 [B]ChangeLog:[/B]
 [SPOILER]
