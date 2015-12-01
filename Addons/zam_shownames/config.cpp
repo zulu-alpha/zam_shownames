@@ -4,10 +4,10 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"CBA_Main"};
-		version = "3.4.3";
-		versionStr = "3.4.3";
+		version = "3.4.4";
+		versionStr = "3.4.4";
 		versionDesc = "ZAM - ShowNames";
-		versionAr[] = {3,4,3};
+		versionAr[] = {3,4,4};
 		author[]= {"Phoenix of Zulu-Alpha"};
 		authorUrl = "http://zulu-alpha.co.za/offices-sop/mods-sop/";
 	};
