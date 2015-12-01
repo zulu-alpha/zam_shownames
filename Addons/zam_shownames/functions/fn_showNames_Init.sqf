@@ -2,18 +2,12 @@
 	Author(s):
 		Phoenix of Zulu-Alpha
 		LH
-
 	Purpose:
 		Initialises ShowNames after 5 seconds has passed.
-
 	Params
 		Nothing
-
 	Return
 	    Nothing
-
-	To do:
-		[*] Add TFAR support
 */
 
 
