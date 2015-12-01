@@ -24,7 +24,7 @@ if !(hasInterface) exitWith {/*diag_log "showNames_init.sqf - Finished (!hasInte
 
 	//// Setting config settings if not defined by mission maker to userconfig setting if it exists, else hardcoded default.
 
-	// Key to be used
+	// Enable the mod
 	if (isNil "zam_showNames_enabled"            ) then {
 		zam_showNames_enabled = 			if !(isNil "zam_showNames_conf_enabled") then {zam_showNames_conf_enabled} else {true}
 	};
