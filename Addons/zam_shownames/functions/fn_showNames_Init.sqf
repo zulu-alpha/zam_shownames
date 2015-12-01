@@ -20,7 +20,6 @@
 if !(hasInterface) exitWith {/*diag_log "showNames_init.sqf - Finished (!hasInterface)"*/};
 
 // Load in keys and settings from userconfig
-// Key stored in variable zam_showNames_key
 #include "\userconfig\zam_shownames\zam_shownames.hpp"
 
 
@@ -34,11 +33,6 @@ if !(hasInterface) exitWith {/*diag_log "showNames_init.sqf - Finished (!hasInte
 	// Key to be used
 	if (isNil "zam_showNames_enabled"            ) then {
 		zam_showNames_enabled = 			if !(isNil "zam_showNames_conf_enabled") then {zam_showNames_conf_enabled} else {true}
-	};
-
-	// Key to be used
-	if (isNil "zam_showNames_key"                ) then {
-		zam_showNames_key = 				if !(isNil "zam_showNames_conf_key") then {zam_showNames_conf_key} else {"User5"}
 	};
 
 	// Use key as toggle
