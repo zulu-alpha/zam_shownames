@@ -1,8 +1,7 @@
-[B]Note: This mod used to be in the @ZAM mod and is now separate. This mod also now supports ACRE![/B]
-
 [B]Author:[/B] Phoenix of Zulu-Alpha
 [B]Author Website:[/B] [url]http://zulu-alpha.co.za/[/url]
 [B]Repo:[/B] [url]https://github.com/zulu-alpha/zam_shownames[/url]
+[B]Discussion page:[/B] [url]https://forums.bistudio.com/topic/175176-zam-shownames/[/url]
 
 [B]Requirements:[/B] @cba_a3
 
@@ -94,107 +93,107 @@ Multiplayer and single player support
 
 [B]ChangeLog:[/B]
 [SPOILER]
-        V3.4.4 - 1-12-2015:
-                - Fixed readme download link. 
+V3.4.4 - 1-12-2015:
+- Fixed readme download link. 
 
-        V3.4.3 - 1-12-2015:
-                - Minor cosmentic cleanup of code. 
+V3.4.3 - 1-12-2015:
+- Minor cosmentic cleanup of code. 
 
-        V3.4.2 - 26-04-2015:
-                - Fixed TFAR support by changing currentUnit to TFAR_currentUnit in fn_showNames_tfar_eh.sqf
+V3.4.2 - 26-04-2015:
+- Fixed TFAR support by changing currentUnit to TFAR_currentUnit in fn_showNames_tfar_eh.sqf
 
-	V3.4.1 - 10-04-2015:
-		- Added support for CBAs new keybinding function.
+V3.4.1 - 10-04-2015:
+- Added support for CBAs new keybinding function.
 	
-	V3.4.0 - 02-03-2015:
-		- Added shadows for much easier identification against bright backgrounds (should be as readable as AGMs).
+V3.4.0 - 02-03-2015:
+- Added shadows for much easier identification against bright backgrounds (should be as readable as AGMs).
 	
-	V3.3.0 - 08-11-2014:
-		- Fixed support for TFAR and improved accuracy.
-		- Added support for @ACRE2. Also supports @st_acre_volume.
-		- Dramatically improved the smoothness of the name tags. Still has great difficulty in choppers though.
+V3.3.0 - 08-11-2014:
+- Fixed support for TFAR and improved accuracy.
+- Added support for @ACRE2. Also supports @st_acre_volume.
+- Dramatically improved the smoothness of the name tags. Still has great difficulty in choppers though.
 
-	V3.2.1 - 15-08-2014:
-		- Added optional feature to show group names for other groups using toggle (ZAM_showNames_group_names).
-		- Added optional feature to show team names for current group (ZAM_showNames_group_teams).
-		- Added key to toggle group names (default Ctrl-y and configurable in cba key-binding menu). Default toggle mode is off.
+V3.2.1 - 15-08-2014:
+- Added optional feature to show group names for other groups using toggle (ZAM_showNames_group_names).
+- Added optional feature to show team names for current group (ZAM_showNames_group_teams).
+- Added key to toggle group names (default Ctrl-y and configurable in cba key-binding menu). Default toggle mode is off.
 
-	V3.2 - 14-08-2014:
-		- Changed the way magnification is detected. Now all optics are supported, in all vehicles.
-		- Added detection of thermal imaging. Name tags are disabled when thermals are used (and fade is enabled).
-		- Changed ID ranges method. ID range is now only limited by the strength of optics (among other conditions).
-		- Tweaked fade handling
-		- Changed getFogViewDistance to be suitable for showNames. Should not be used anywhere else.
-		- getZoom function added.
-		- Fixed a few zero divisor errors.
+V3.2 - 14-08-2014:
+- Changed the way magnification is detected. Now all optics are supported, in all vehicles.
+- Added detection of thermal imaging. Name tags are disabled when thermals are used (and fade is enabled).
+- Changed ID ranges method. ID range is now only limited by the strength of optics (among other conditions).
+- Tweaked fade handling
+- Changed getFogViewDistance to be suitable for showNames. Should not be used anywhere else.
+- getZoom function added.
+- Fixed a few zero divisor errors.
 
-	V3.1.4 - 04-08-2014:
-		- Added CBA as a dependancy.
-		- Changed over to CBA keyhandler. You should now set your key in the game options.
-		- Attempted to fix _vd_player bug.
+V3.1.4 - 04-08-2014:
+- Added CBA as a dependancy.
+- Changed over to CBA keyhandler. You should now set your key in the game options.
+- Attempted to fix _vd_player bug.
 
-	V3.1.3 - 23-07-2014:
-		- Added option to use key as toggle (set  'zam_showNames_conf_toggle = true'  in the userconfig).
-		- Added singleplayer support
-		- Fixed zero divisor error with null check
-		- Fixed userconfig mess
+V3.1.3 - 23-07-2014:
+- Added option to use key as toggle (set  'zam_showNames_conf_toggle = true'  in the userconfig).
+- Added singleplayer support
+- Fixed zero divisor error with null check
+- Fixed userconfig mess
 
-	V3.1.2 - 12-07-2014:
-		- Calibrated TFAR feature
-		- Fixed TS3 crash due to call extension on null object. Now tfar_eh more cautious.
+V3.1.2 - 12-07-2014:
+- Calibrated TFAR feature
+- Fixed TS3 crash due to call extension on null object. Now tfar_eh more cautious.
 
-	V3.1.1 - 12-07-2014:
-		- Tweaked names heights when in vehicles and standing
-		- Added safety to make sure discoverable objects and normally seen objects don't clash
+V3.1.1 - 12-07-2014:
+- Tweaked names heights when in vehicles and standing
+- Added safety to make sure discoverable objects and normally seen objects don't clash
 
-	V3.1 - 09-07-2014:
-		- Reduced name tag sizes
-		- Feature added to allow mission makers to make units discoverable (knowledge feature) (optional)
-		- addDiscoverable function added
-		- Added support for miscellaneous objects through knowledge feature (name tag will display as ruck sack name tag)
-		- pressLoop function added - A helper thread to offload calculations from the onEachFrame stack that also allows finer performance controls
-		- Massive performance optimisation through the use of pressLoop function
-		- Added TFAR support
-		- Feature added to indicate relative volume of speaker (through redness of name tag) (Optional)
-		- tfar_eh function added
-		- tfar_vol function added
-		- Renamed to showNames
-		- Fixed support for AGM medical by avoiding side confusion as a result of setCaptive
-		- Added fog effect modifier for different types of objects (as backpacks where too easy to see through fog)
+V3.1 - 09-07-2014:
+- Reduced name tag sizes
+- Feature added to allow mission makers to make units discoverable (knowledge feature) (optional)
+- addDiscoverable function added
+- Added support for miscellaneous objects through knowledge feature (name tag will display as ruck sack name tag)
+- pressLoop function added - A helper thread to offload calculations from the onEachFrame stack that also allows finer performance controls
+- Massive performance optimisation through the use of pressLoop function
+- Added TFAR support
+- Feature added to indicate relative volume of speaker (through redness of name tag) (Optional)
+- tfar_eh function added
+- tfar_vol function added
+- Renamed to showNames
+- Fixed support for AGM medical by avoiding side confusion as a result of setCaptive
+- Added fog effect modifier for different types of objects (as backpacks where too easy to see through fog)
 
-	V3 - 04-07-2014:
-		- Most code re-written and adjusted to allow for easier addition of features
-		- getFogViewDistance function added
-		- getRankIcon function added
-		- Feature added to display image of unit's rank (optional)
-		- Feature added to display last user of ruck when one is put on the ground (optional)
-		- Feature added to make players of the same group have their names show up bolder and everyone else's lighter, if applicable (optional)
-		- Feature added to make name tags fade with distance, taking into account time of day and magnification (optional)
-		- Feature added to make name tags fade even more depending on fog (including new A3 fog) (optional)
-		- Feature added to detect non optical magnification and linearly adjust name tag sizes accordingly (optional)
-		- Added userconfig to change user action keys used and default options for features
-		- Fixed detection of crouch stance
-		- Adjusted name tag heights (for ranks and tweaks)
-		- Adjusted maximum text and icon sizes for rucks and people
-		- Added different categories of maximum text sizes to allow for smaller max text size for vehicle occupants (to better differentiate them)
-		- Many more smaller adjustements
+V3 - 04-07-2014:
+- Most code re-written and adjusted to allow for easier addition of features
+- getFogViewDistance function added
+- getRankIcon function added
+- Feature added to display image of unit's rank (optional)
+- Feature added to display last user of ruck when one is put on the ground (optional)
+- Feature added to make players of the same group have their names show up bolder and everyone else's lighter, if applicable (optional)
+- Feature added to make name tags fade with distance, taking into account time of day and magnification (optional)
+- Feature added to make name tags fade even more depending on fog (including new A3 fog) (optional)
+- Feature added to detect non optical magnification and linearly adjust name tag sizes accordingly (optional)
+- Added userconfig to change user action keys used and default options for features
+- Fixed detection of crouch stance
+- Adjusted name tag heights (for ranks and tweaks)
+- Adjusted maximum text and icon sizes for rucks and people
+- Added different categories of maximum text sizes to allow for smaller max text size for vehicle occupants (to better differentiate them)
+- Many more smaller adjustements
 
-	V2.3 - 18-02-2014:
-		- Did some fiddly stuff in OnEachFrame to ensure no unnecessary calculations are done.
-		- Limited the size the text can become.
+V2.3 - 18-02-2014:
+- Did some fiddly stuff in OnEachFrame to ensure no unnecessary calculations are done.
+- Limited the size the text can become.
 		
-	V2.2 - 31-01-2014:
-		- Changed the way name tag height is calculated, to take into account different stances.
-		- Changed the way unit list is generated to display names for. 3 orders of magnitude faster and better vehicle handling, but limited or no AI support.
+V2.2 - 31-01-2014:
+- Changed the way name tag height is calculated, to take into account different stances.
+- Changed the way unit list is generated to display names for. 3 orders of magnitude faster and better vehicle handling, but limited or no AI support.
 
-	V2.1 - 28-01-2014:
-		- More Optimizations
-		- (Fixed) zero divizor error
-		- Changed which object's names are shown
-		- Added new functions to filter arrays
+V2.1 - 28-01-2014:
+- More Optimizations
+- (Fixed) zero divizor error
+- Changed which object's names are shown
+- Added new functions to filter arrays
 
-	V2 - 28-01-2014:
-		- Swich from onEachFrame to BIS_fnc_addStackedEventHandler (Done by LH)
-		- Major Optimizations (Done by LH)
-		- Removed line of sight to lower body check (Done by LH)
+V2 - 28-01-2014:
+- Swich from onEachFrame to BIS_fnc_addStackedEventHandler (Done by LH)
+- Major Optimizations (Done by LH)
+- Removed line of sight to lower body check (Done by LH)
 [/SPOILER]
