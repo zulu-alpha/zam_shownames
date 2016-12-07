@@ -5,7 +5,7 @@
 
 [B]Requirements:[/B] @cba_a3
 
-[B]Version:[/B] v3.4.4
+[B]Version:[/B] v3.4.5
 [B]Signed:[/B] Yes
 
 [B]Short description:[/B] An advanced and realistic name tag system designed to simulate real world recognition conditions. 
@@ -88,11 +88,14 @@ Multiplayer and single player support
 		 Feel free to use and modify this code, on the proviso that you post back changes and improvements 
 		 so that everyone can benefit from them, and acknowledge the original authors in any derivative works. 
 
-[B]Download:[/B] [url]https://github.com/zulu-alpha/zam_shownames/releases/download/v3.4.4/zam_shownames_v3_4_4.zip[/url]
+[B]Download:[/B] [url]https://github.com/zulu-alpha/zam_shownames/releases/download/v3.4.5/zam_shownames_v3_4_5.zip[/url]
 
 
 [B]ChangeLog:[/B]
 [SPOILER]
+V3.4.5 - 8-12-2016:
+- Fixed compatibility with A3 1.66 by removing empty var in for loop. 
+
 V3.4.4 - 1-12-2015:
 - Fixed readme download link. 
 
