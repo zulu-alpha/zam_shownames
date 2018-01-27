@@ -16,7 +16,7 @@
 //diag_log "fn_showNames_release.sqf - Started";
 
 // Exit if key wasn't down.
-if (!ZAM_showNames_on || zam_showNames_toggle) exitWith {false};
+if (!ZAM_showNames_on or zam_showNames_toggle) exitWith {false};
 
 // End showNames process
 ZAM_showNames_on = false;

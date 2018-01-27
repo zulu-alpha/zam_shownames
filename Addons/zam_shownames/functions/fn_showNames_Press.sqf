@@ -56,7 +56,7 @@ _temp_array = if (!isMultiplayer) then {allUnits} else {playableUnits};
 _temp_array = [_temp_array, [player]] call ZAM_fnc_showNames_filterArrayByEquality;
 
 // Remove if player on different side or too far away (with support for setCaptive)
-_objects = [_temp_array, { ( (side (group _this)) != _player_side ) || { player distance _this > ( (_dist_man * _magn) min _vd ) }}] call ZAM_fnc_showNames_filterArrayByCode;
+_objects = [_temp_array, { ( (side (group _this)) != _player_side ) or { player distance _this > ( (_dist_man * _magn) min _vd ) }}] call ZAM_fnc_showNames_filterArrayByCode;
 
 
 // Check if there are group members for group differentiation
@@ -71,7 +71,7 @@ if (ZAM_showNames_rucks) then {
 	_temp_array = (getPosATL player) nearObjects ["GroundWeaponHolder", (_dist_ruck * _magn) min _vd];
 
 	// Remove gear stacks that don't have rucks or name tags
-	_temp_array = [_temp_array, { _ruck = firstBackpack _this; isNull (_ruck) || {_ruck getVariable ["zam_showNames_tag",""] == ""} }] call ZAM_fnc_showNames_filterArrayByCode;
+	_temp_array = [_temp_array, { _ruck = firstBackpack _this; isNull (_ruck) or {_ruck getVariable ["zam_showNames_tag",""] == ""} }] call ZAM_fnc_showNames_filterArrayByCode;
 
 	// Add to names_to_show
 	{

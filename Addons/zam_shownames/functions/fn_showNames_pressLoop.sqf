@@ -94,7 +94,7 @@ for "_i" from 0 to 1 step 0 do {
 				} else {true};
 
 				// Set to known if close enough
-				if ( !_isKnown && {_same_side || {_distance < _dist_man_id}} ) then {
+				if ( !_isKnown && {_same_side or {_distance < _dist_man_id}} ) then {
 					_x setVariable ["zam_showNames_isKnown", true];
 					_isKnown = true;
 				};

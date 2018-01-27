@@ -97,7 +97,7 @@ if !(hasInterface) exitWith {/*diag_log "showNames_init.sqf - Finished (!hasInte
 
 
 	// Double check for deprecated version
-	if ( (!(isNil "zam_showname_enabled") && {!(zam_showname_enabled)}) || !(isNil "zam_showNames_enabled") && {!(zam_showNames_enabled)} ) exitwith {/*diag_log "showNames_init.sqf - Finished (disabled)";*/};
+	if ( (!(isNil "zam_showname_enabled") && {!(zam_showname_enabled)}) or !(isNil "zam_showNames_enabled") && {!(zam_showNames_enabled)} ) exitwith {/*diag_log "showNames_init.sqf - Finished (disabled)";*/};
 
 
 	// Start a voice EH if TFAR or ACRE loaded, else disable voice support
