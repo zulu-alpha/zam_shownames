@@ -109,14 +109,10 @@ if !(hasInterface) exitWith {/*diag_log "showNames_init.sqf - Finished (!hasInte
 	// Toggle for group names, handled with a different variable to allow for default off
 	ZAM_showNames_group_names_toggle = false;
 	if (ZAM_showNames_group_names) then {
-		["ZAM", "Toggle group names", ["Toggle Group Names", "Show the person's Group ID next to their name."], {ZAM_showNames_group_names_toggle = !(call compile "ZAM_showNames_group_names_toggle"); true}, "", [0x15, [false, true, false]]] call cba_fnc_addKeybind;
+		["ZAM ShowNames", "Toggle group names", ["Toggle Group Names", "Show the person's Group ID next to their name."], {ZAM_showNames_group_names_toggle = !(call compile "ZAM_showNames_group_names_toggle"); true}, "", [0x15, [false, true, false]]] call cba_fnc_addKeybind;
 	};
 
 	// Key press and release. No release code if toggle mode is on.
-	if !(zam_showNames_toggle) then {
-		["ZAM", "showNames", ["Show Names", "To actually show the names"], {_this call ZAM_fnc_showNames_Press}, {_this call ZAM_fnc_showNames_Release}, [0x15, [false, false, false]]] call cba_fnc_addKeybind;
-	} else {
-		["ZAM", "showNames", ["Show Names", "To actually show the names"], {_this call ZAM_fnc_showNames_Press}, "", [0x15, [false, false, false]]] call cba_fnc_addKeybind;
-	};
+	["ZAM ShowNames", "Show Names", ["Show Names", "To actually show the names"], {_this call ZAM_fnc_showNames_Press}, {_this call ZAM_fnc_showNames_Release}, [0x14, [false, false, false]]] call cba_fnc_addKeybind;
 
 };
