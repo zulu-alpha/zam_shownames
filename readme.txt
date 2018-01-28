@@ -46,7 +46,7 @@ Standard mod installation with @folder
 zam_shownames.pbo
 
 [B]Usage[/B]:
-Press y (or another key configured in Main Menu, Configure -> Controls -> Configure Addons -> ZAM -> showNames) to show the names of all players on your side and name tags of rucks used by players.
+Press t (or another key configured in Main Menu, Configure -> Controls -> Configure Addons -> ZAM -> showNames) to show the names of all players on your side and name tags of rucks used by players.
 Note that the key options will appear in that menu only 5 seconds into the game.
 
 Client side mod
@@ -72,6 +72,7 @@ Multiplayer and single player support
 [SPOILER]
 V3.5.0 - 28-01-2018
  - Replaced .hpp settings file with CBA addon settings.
+ - Changed category name of keys in CBA settings and change default key to T
 
 V3.4.5 - 8-12-2016:
 - Fixed compatibility with A3 1.66 by removing empty var in for loop. 
