@@ -22,83 +22,9 @@ if !(hasInterface) exitWith {/*diag_log "showNames_init.sqf - Finished (!hasInte
 	waitUntil {player == player};
 	waitUntil {time >= 5};
 
-	//// Setting config settings if not defined by mission maker to userconfig setting if it exists, else hardcoded default.
-
-	// Enable the mod
-	if (isNil "zam_showNames_enabled"            ) then {
-		zam_showNames_enabled = 			if !(isNil "zam_showNames_conf_enabled") then {zam_showNames_conf_enabled} else {true}
-	};
-
-	// Use key as toggle
-	if (isNil "zam_showNames_toggle"             ) then {
-		zam_showNames_toggle = 				if !(isNil "zam_showNames_conf_toggle") then {zam_showNames_conf_toggle} else {false}
-	};
-
-	// Enable ranks
-	if (isNil "ZAM_showNames_ranks"              ) then {
-		ZAM_showNames_ranks = 				if !(isNil "zam_showNames_conf_ranks") then {zam_showNames_conf_ranks} else {true}
-	};
-
-	// Enable rucks
-	if (isNil "ZAM_showNames_rucks"              ) then {
-		ZAM_showNames_rucks = 				if !(isNil "zam_showNames_conf_rucks") then {zam_showNames_conf_rucks} else {true}
-	};
-
-	// Enable group differentiation (using boldness)
-	if (isNil "ZAM_showNames_group"              ) then {
-		ZAM_showNames_group = 				if !(isNil "zam_showNames_conf_group") then {zam_showNames_conf_group} else {true}
-	};
-
-	// Enable group names for other groups
-	if (isNil "ZAM_showNames_group_names"         ) then {
-		ZAM_showNames_group_names = 			if !(isNil "ZAM_showNames_conf_group_names") then {ZAM_showNames_conf_group_names} else {true}
-	};
-
-	// Enable team names for current group
-	if (isNil "ZAM_showNames_group_teams"         ) then {
-		ZAM_showNames_group_teams = 			if !(isNil "ZAM_showNames_conf_group_teams") then {ZAM_showNames_conf_group_teams} else {true}
-	};
-
-	// Enable fade of name tag with distance
-	if (isNil "ZAM_showNames_fade"               ) then {
-		ZAM_showNames_fade = 				if !(isNil "zam_showNames_conf_fade") then {zam_showNames_conf_fade} else {true}
-	};
-
-	// Enable fog to exaggerate fade
-	if (isNil "ZAM_showNames_fog"                ) then {
-		ZAM_showNames_fog = 				if !(isNil "zam_showNames_conf_fog") then {zam_showNames_conf_fog} else {true}
-	};
-
-	// Enable magnification effect (only for non optical zoom)
-	if (isNil "ZAM_showNames_magn"               ) then {
-		ZAM_showNames_magn = 				if !(isNil "zam_showNames_conf_magn") then {zam_showNames_conf_magn} else {true}
-	};
-
-	// Knowledge system
-	if (isNil "ZAM_showNames_knowledge"          ) then {
-		ZAM_showNames_knowledge = 			if !(isNil "zam_showNames_conf_knowledge") then {zam_showNames_conf_knowledge} else {true}
-	};
-
-	// Support for TFAR
-	if (isNil "ZAM_showNames_voice"               ) then {
-		ZAM_showNames_voice = 				if !(isNil "zam_showNames_conf_voice") then {zam_showNames_conf_voice} else {true}
-	};
-
-	// For adjusting the performance of shownames (smaller is better)
-	if (isNil "ZAM_showNames_var_pressLoop_delay") then {
-		ZAM_showNames_var_pressLoop_delay = if !(isNil "zam_showNames_conf_var_pressLoop_delay") then {zam_showNames_conf_var_pressLoop_delay} else {0.005}
-	};
-
-	// For adjusting frequency at which player acre activity is monitored (for Voice feature)
-	if (isNil "ZAM_showNames_var_acre_eh_delay"  ) then {
-		ZAM_showNames_var_acre_eh_delay = 	if !(isNil "zam_showNames_conf_var_acre_eh_delay") then {zam_showNames_conf_var_acre_eh_delay} else {0.25}
-	};
-
-
-
-	// Double check for deprecated version
-	if ( (!(isNil "zam_showname_enabled") && {!(zam_showname_enabled)}) or !(isNil "zam_showNames_enabled") && {!(zam_showNames_enabled)} ) exitwith {/*diag_log "showNames_init.sqf - Finished (disabled)";*/};
-
+	// Performance settings
+	ZAM_showNames_var_pressLoop_delay = 0.005;	// For adjusting the performance of shownames (smaller is better)
+    ZAM_showNames_var_acre_eh_delay = 0.1;	// For adjusting frequency at which player acre activity is monitored (for Voice feature)
 
 	// Start a voice EH if TFAR or ACRE loaded, else disable voice support
 	ZAM_showNames_tfar = false;

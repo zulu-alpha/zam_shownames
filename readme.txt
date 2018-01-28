@@ -5,7 +5,7 @@
 
 [B]Requirements:[/B] @cba_a3
 
-[B]Version:[/B] v3.4.5
+[B]Version:[/B] v3.5.0
 [B]Signed:[/B] Yes
 
 [B]Short description:[/B] An advanced and realistic name tag system designed to simulate real world recognition conditions. 
@@ -40,9 +40,7 @@ This has been separated out of the ZAM mods collection and is where you should g
 [/LIST]
 
 [B]Installation:[/B] 
-Standard mod installation with @folder. You will also have to copy the userconfig folder from the mod folder to your root Arma 3 directory (eg: C:\Program Files (x86)\Steam\steamapps\common\Arma 3\userconfig). 
-Otherwise you will get an error stating somehting along the lines of: z"am_shownames.hpp not found".
-I intend on deprecating this requirement in the futurem once a better mod configuration method comes along.
+Standard mod installation with @folder
 
 [B]Included Files:[/B] 
 zam_shownames.pbo
@@ -50,27 +48,6 @@ zam_shownames.pbo
 [B]Usage[/B]:
 Press y (or another key configured in Main Menu, Configure -> Controls -> Configure Addons -> ZAM -> showNames) to show the names of all players on your side and name tags of rucks used by players.
 Note that the key options will appear in that menu only 5 seconds into the game.
-
-(Mission makers) Disable by setting: zam_showNames_enabled = false
-Before 5 seconds into the game.
-Other options are available and can be set the same way as zam_showNames_enabled.
-The following is a list of all the options being set to their default values:
-[LIST]
-	[*] zam_showNames_enabled = true;		// Enable the mod
-	[*] zam_showNames_toggle = false;		// Use the key in toggle mode; Tap to turn on, tap again to turn off. As opposed to hold down to keep on.
-	[*] zam_showNames_ranks = true; 		// Enable ranks
-	[*] zam_showNames_rucks = true; 		// Enable rucks
-	[*] zam_showNames_group = true; 		// Enable group differentiation (using boldness)
-	[*] zam_showNames_group_names = true; 		// Enable group names for other groups
-	[*] zam_showNames_group_teams = true; 		// Enable team names for current group
-	[*] zam_showNames_fade  = true; 		// Enable fade of name tag with distance
-	[*] zam_showNames_fog   = true; 		// Enable fog to exaggerate fade
-	[*] zam_showNames_magn  = true; 		// Enable magnification effect (only for temporary zoom)
-	[*] zam_showNames_knowledge = true;		// Knowledge system
-	[*] zam_showNames_voice = true; 		// Support for TFAR and ACRE
-	[*] zam_showNames_var_pressLoop_delay = 0.005;	// For adjusting the performance of shownames (smaller is better)
-	[*] zam_showNames_var_acre_eh_delay = 0.1;	// For adjusting frequency at which player acre activity is monitored (for Voice feature)
-[/LIST]
 
 Client side mod
 Multiplayer and single player support
@@ -93,6 +70,9 @@ Multiplayer and single player support
 
 [B]ChangeLog:[/B]
 [SPOILER]
+V3.5.0 - 28-01-2018
+ - Replaced .hpp settings file with CBA addon settings.
+
 V3.4.5 - 8-12-2016:
 - Fixed compatibility with A3 1.66 by removing empty var in for loop. 
 

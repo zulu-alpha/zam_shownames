@@ -18,6 +18,8 @@
 
 private ["_player", "_player_side", "_ambient_light", "_dist_man", "_dist_ruck", "_dist_misc", "_dist_man_id", "_magn", "_vd", "_temp_array", "_objects", "_isGroup"];
 
+// Mod soft disabled
+if !(zam_showNames_enabled) exitWith {};
 
 // Used if the key is pressed a second time to turn off show names when toggle mode is used.
 if (ZAM_showNames_on && zam_showNames_toggle) exitWith {

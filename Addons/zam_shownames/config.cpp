@@ -4,10 +4,10 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"CBA_Main"};
-		version = "3.4.5";
-		versionStr = "3.4.5";
+		version = "3.5.0";
+		versionStr = "3.5.0";
 		versionDesc = "ZAM - ShowNames";
-		versionAr[] = {3,4,5};
+		versionAr[] = {3,5,0};
 		author[]= {"Phoenix of Zulu-Alpha"};
 		authorUrl = "http://zulu-alpha.co.za/offices-sop/mods-sop/";
 	};
@@ -38,4 +38,9 @@ class CfgFunctions
 			class showNames_getZoom{description = "Returns the zoom level of the player.";};
 		};
 	};
+};
+
+class Extended_PreInit_EventHandlers 
+{
+	init = call compile preprocessFileLineNumbers "zam_showNames\XEH_preInit.sqf";
 };
