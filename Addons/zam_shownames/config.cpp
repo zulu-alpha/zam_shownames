@@ -6,7 +6,7 @@ class CfgPatches {
 		requiredAddons[] = {"CBA_Main"};
 		version = "3.5.0";
 		versionStr = "3.5.0";
-		versionDesc = "ZAM - ShowNames";
+		versionDesc = "zam_showNames";
 		versionAr[] = {3,5,0};
 		author[]= {"Phoenix of Zulu-Alpha"};
 		authorUrl = "http://zulu-alpha.co.za/offices-sop/mods-sop/";
