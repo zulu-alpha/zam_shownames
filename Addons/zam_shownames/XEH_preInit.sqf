@@ -17,7 +17,7 @@
 	"zam_showNames_enabled",
 	"CHECKBOX",
 	"Enable",
-	"General",
+	"ZAM ShowNames",
 	True,
 	nil
 ] call CBA_Settings_fnc_init;
@@ -27,7 +27,7 @@
 	"zam_showNames_toggle",
 	"CHECKBOX",
 	["Toggle Mode", "Key toggles shownames on or off rather then needing to be pressed"],
-	"General",
+	"ZAM ShowNames",
 	False,
 	nil
 ] call CBA_Settings_fnc_init;
@@ -39,7 +39,7 @@
 	"ZAM_showNames_ranks",
 	"CHECKBOX",
 	"Show ranks",
-	"Preferences",
+	"ZAM ShowNames",
 	True,
 	nil
 ] call CBA_Settings_fnc_init;
@@ -49,7 +49,7 @@
 	"ZAM_showNames_rucks",
 	"CHECKBOX",
 	["Backpacks", "Show last owner of backpack"],
-	"Preferences",
+	"ZAM ShowNames",
 	True,
 	nil
 ] call CBA_Settings_fnc_init;
@@ -59,7 +59,7 @@
 	"ZAM_showNames_group",
 	"CHECKBOX",
 	["Group differentiation", "Members of your own group have bolder names"],
-	"Preferences",
+	"ZAM ShowNames",
 	True,
 	nil
 ] call CBA_Settings_fnc_init;
@@ -69,7 +69,7 @@
 	"ZAM_showNames_group_names",
 	"CHECKBOX",
 	["Group Names", "Show the group names of other groups"],
-	"Preferences",
+	"ZAM ShowNames",
 	True,
 	nil
 ] call CBA_Settings_fnc_init;
@@ -79,7 +79,7 @@
 	"ZAM_showNames_group_teams",
 	"CHECKBOX",
 	["Team names", "Show the team names of people in your own group"],
-	"Preferences",
+	"ZAM ShowNames",
 	True,
 	nil
 ] call CBA_Settings_fnc_init;
@@ -91,7 +91,7 @@
 	"ZAM_showNames_knowledge",
 	"CHECKBOX",
 	"Knowledge system",
-	"Features",
+	"ZAM ShowNames",
 	True,
 	True
 ] call CBA_Settings_fnc_init;
@@ -103,7 +103,7 @@
 	"ZAM_showNames_fade",
 	"CHECKBOX",
 	["Distance Fade", "Enable fade of name tag with distance"],
-	"Difficulty",
+	"ZAM ShowNames",
 	True,
 	True
 ] call CBA_Settings_fnc_init;
@@ -113,7 +113,7 @@
 	"ZAM_showNames_fog",
 	"CHECKBOX",
 	["Fog Fade", "Enable fog to exaggerate fade"],
-	"Difficulty",
+	"ZAM ShowNames",
 	True,
 	True
 ] call CBA_Settings_fnc_init;
@@ -123,7 +123,7 @@
 	"ZAM_showNames_magn",
 	"CHECKBOX",
 	["Zoom", "Enable zoom effect (non optical zoom)"],
-	"Difficulty",
+	"ZAM ShowNames",
 	True,
 	True
 ] call CBA_Settings_fnc_init;
@@ -133,7 +133,7 @@
 	"ZAM_showNames_voice",
 	"CHECKBOX",
 	["Voice", "Enable speaking indicator for TFAR or ACRE"],
-	"Difficulty",
+	"ZAM ShowNames",
 	True,
 	True
 ] call CBA_Settings_fnc_init;
