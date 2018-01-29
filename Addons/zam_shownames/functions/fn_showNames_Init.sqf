@@ -13,10 +13,6 @@
 
 if !(hasInterface) exitWith {/*diag_log "showNames_init.sqf - Finished (!hasInterface)"*/};
 
-// Load in keys and settings from userconfig
-#include "\userconfig\zam_shownames\zam_shownames.hpp"
-
-
 [] spawn {
 
 	waitUntil {player == player};
